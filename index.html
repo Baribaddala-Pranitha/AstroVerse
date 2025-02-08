@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Universe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the 3D Universe</h1>
+        <nav>
+            <ul>
+                <li><button onclick="showPage('home')">Home</button></li>
+                <li><button onclick="showPage('solar-system')">Solar System</button></li>
+                <li><button onclick="showPage('galaxy')">Galaxy</button></li>
+                <li><button onclick="showPage('stars')">Stars</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home" class="tab-content">
+            <h2>Home</h2>
+            <p>Welcome to the 3D Universe, explore the Solar System, Galaxy, and Stars in 3D!</p>
+            <p>LET'S EXPLORE</p>
+        </div>
+
+        <div id="solar-system" class="tab-content">
+            <h2>3D Solar System</h2>
+            <div id="solar-system-container"></div>
+        </div>
+
+        <div id="galaxy" class="tab-content">
+            <h2>3D Rotating Galaxy</h2>
+            <div id="galaxy-container"></div>
+        </div>
+
+        <div id="stars" class="tab-content">
+            <h2>3D Rotating Stars</h2>
+            <div id="stars-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Baribaddala Pranitha</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
